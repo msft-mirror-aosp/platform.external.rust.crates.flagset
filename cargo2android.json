@@ -4,5 +4,18 @@
     "com.android.virt"
   ],
   "run": true,
-  "vendor-available": true
+  "vendor-available": true,
+  "variants": [
+    {
+    },
+    {
+      "device": true,
+      "no-host": true,
+      "add-module-block": "cargo2android_viz.bp",
+      "dependency_suffix": "_nostd",
+      "force-rlib": true,
+      "suffix": "_nostd",
+      "no-std": true
+    }
+  ]
 }
